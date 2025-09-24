@@ -99,14 +99,51 @@ Each optimizer's run includes full classification reports and confusion matrices
 
 ## How to Use
 
-1. **Clone the Repository:**
+You can run this project either on your local machine or directly in Google Colab. For ease of use and optimal performance, Google Colab is recommended.
+
+### 1. Running on Your Local Machine
+
+- **Clone the Repository:**
    ```bash
    git clone https://github.com/Giwa-ibrahim/metal_surface_detection.git
    ```
-2. **Install Dependencies:**  
-   Ensure Python and Jupyter are installed, then install dependencies as specified in the notebooks (e.g., PyTorch, NumPy, OpenCV).
-3. **Run the Notebooks:**  
-   Open the Jupyter notebooks and execute sequentially to reproduce preprocessing, model training, and result analysis.
+
+- **Install Dependencies:**  
+   Make sure you have Python 3.10 and Jupyter Notebook installed. Then, install the required libraries as specified in the notebooks:
+   ```bash
+   pip install torch==2.0.1 torchvision numpy matplotlib scikit-learn opencv-python
+   ```
+
+- **Run the Notebooks:**  
+   Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
+   Open the notebook files in your browser and execute the cells sequentially to perform data preprocessing, model training, and result analysis.
+
+---
+
+### 2. Running on Google Colab (Recommended)
+
+- **Open the Notebook in Google Colab:**  
+   Upload or open the project’s Jupyter Notebook in [Google Colab](https://colab.research.google.com/). Colab provides free access to an NVIDIA Tesla T4 GPU (16GB VRAM), which significantly accelerates model training.
+
+- **Configure the Runtime:**  
+   Go to `Runtime` > `Change runtime type` and select **GPU** under "Hardware accelerator".
+
+- **Install Dependencies:**  
+   Most essential libraries (PyTorch, Torchvision, NumPy, Matplotlib, Scikit-learn) are pre-installed in Colab. If needed, install missing packages in a notebook cell:
+   ```python
+   !pip install torch==2.0.1 torchvision numpy matplotlib scikit-learn opencv-python
+   ```
+
+- **Execute the Notebook Cells:**  
+   Follow the step-by-step instructions in the notebook to complete data preprocessing, model training, and evaluation.
+
+---
+
+**Note:**  
+If you run this project locally without a compatible NVIDIA GPU, training will be much slower. For best performance and convenience, use Google Colab’s free GPU resources.
 
 ---
 
