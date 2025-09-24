@@ -1,4 +1,4 @@
-# Metal Surface Defect Detection using CNNs Optimized with Gazelle Optimization Algorithms
+# Metal Surface Defect Detection using CNN with GOA
 
 A deep learning project for metal surface defect classification using Convolutional Neural Networks (CNNs) optimized with Gazelle Optimization Algorithms (GOA) and their advanced variants. It features extensive image preprocessing, dataset transformation, and a comparative analysis of multiple optimization methods for improved defect detection in industrial quality control.
 
